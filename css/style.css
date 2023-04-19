@@ -358,6 +358,7 @@ h4 {
   font-size: 2.25rem;
   font-weight: 500;
   align-self: center;
+  color: #000;
 }
 
 .operations__icon {
@@ -916,4 +917,33 @@ h4 {
   100% {
     border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
   }
+}
+
+
+#contact-info{
+  /* align-items: center; */
+  text-align: left;
+  padding-left: 7%;
+  /* line-height: 4rem; */
+  font-size: large;
+}
+.email{
+  color: #fff;
+  text-decoration: none;
+}
+
+#details{
+  font-weight:normal;
+}
+
+#main{
+  color: #5ec576;
+  font-weight: bold;
+  font-size: large;
+}
+
+#contact-us{
+  color:#5ec576 ;
+  text-decoration: overline dotted;
+  text-align: center;
 }
