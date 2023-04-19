@@ -1,7 +1,9 @@
-# 💸 Bankist
+Bank Hamara
 
-Bankist is a fictitious and minimalistic online banking application 
+DBMS Project to be given in 4th Semester 
 
-## Deployment
-
-Deployed Website: https://shuvo18103107.github.io/Bankist-Web-App/
+Contributors:
+Ved Vekhande
+Gunal Gupta
+Anubhav Dubey
+Navin Kumar
