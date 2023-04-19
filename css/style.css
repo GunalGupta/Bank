@@ -644,6 +644,7 @@ h4 {
   font-size: 3.25rem;
   margin-bottom: 4.5rem;
   line-height: 1.5;
+  color: #000;
 }
 
 .modal__form {
@@ -652,6 +653,7 @@ h4 {
   grid-template-columns: 1fr 2fr;
   align-items: center;
   gap: 2.5rem;
+  color: #000;
 }
 
 .modal__form label {
@@ -682,6 +684,7 @@ h4 {
   cursor: pointer;
   border: none;
   background: none;
+  color: #000;
 }
 
 .hidden {
