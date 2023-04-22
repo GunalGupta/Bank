@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css'>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="flex text-gray-800 min-h-screen overflow-x-hidden">
+        <aside class="hidden asid">
+            <a href="#" class="flex items-center mx-auto my-12">
+                <div id="rounded-full-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <span id="top-head">Bank Hamara</span>
+            </a>
+            <a href="#" id="logo-below"
+                class="block text-center text-white text-lg font-semibold bg-purple-600 hover:bg-purple-700 py-3 px-4 mx-8 rounded-lg">
+                Transfer money
+            </a>
+            <nav class="font-semibold text-gray-600 my-12">
+                <ul class="space-y-3">
+                    <li>
+                        <a href="#"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r from-purple-200 text-purple-600 inset-active-link">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cards.html"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                            </svg>
+                            Cards
+                        </a>
+                    </li>
+                    <li>
+                        <a href="subscriptions.html"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                            Subscriptions
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                            </svg>
+                            Statements
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="transaction.html"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            Transactions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            Loans
+                        </a>
+                    </li>
+                    <li>
+                        <a href="support.html"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            Support
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex flex-col items-center py-3 px-4 bg-purple-200 bg-opacity-50 rounded-md mt-auto mb-10 mx-8">
+                <span class="font-semibold text-gray-900">Start saving!</span>
+                <a href="#" class="text-purple-600 font-medium underline">Upgrade to PRO</a>
+            </div>
+        </aside>
+        <div class="flex-grow bg-gray-100">
+            <main>
+                <div class="ml-auto flex items-center space-x-3">
+                    <h1>Overview</h1>
+                        <button style="margin-left: 60%;"
+                            class="p-2 text-gray-600 relative bg-white rounded-full shadow hover:bg-gray-100 hover:text-gray-700">
+                            <span class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full mt-1 mr-2"></span>
+                            <span
+                                class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full mt-1 mr-2 animate-ping"></span>
+                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                            </svg>
+                        </button>
+                        <button class="h-10 w-10 bg-gray-200 border shadow rounded-full overflow-hidden">
+                            <img style="background-color: #000;" src="img\user4.png"
+                                class="h-full w-full object-cover" />
+                        </button>
+                </div>
+                    <div class="charts-wrapper">
+                        <section role="credit-card" onclick="myFunction()">
+                            <div class="top">
+                                <img src="https://ozcanzaferayan.github.io/financial-crm/img/mastercard.svg" />
+                                <img src="https://ozcanzaferayan.github.io/financial-crm/img/apple_pay.svg"
+                                    class="apple_pay" />
+                            </div>
+                            <div class="ccNumber">
+                                <span>˙˙˙˙ ˙˙˙˙ ˙˙˙˙ 5610</span>
+                            </div>
+                            <div class="ccBottom">
+                                <div class="ccValidThru">
+                                    <label>VALID THRU</label>
+                                    <span>05/27</span>
+                                </div>
+                                <div class="ccCardHolder">
+                                    <label>CARD HOLDER</label>
+                                    <span>Lara Page</span>
+                                </div>
+                            </div>
+                        </section>
+                        <section role="chart" class="exchange-rates">
+                        <h3 class="title" id="chart1-title" style="font-size: 2em;">Networth</h3>
+                        <h3 class="title" id="chart1-title1">$12,08,592</h3>
+                        <div id="charts-title">
+                            <div>
+                                <h3 class="title" id="chart1-title">Balance</h3>
+                                <h3 class="title" id="chart1-title2">$2,03,050</h3>
+                            </div>
+                            <div style="margin-left: 2em;">
+                                <h3 class="title" id="chart1-title">Investmemts</h3>
+                                <h3 class="title" id="chart1-title3">$10,05,442</h3>
+                            </div>
+                            <div style="margin-left: 2em;">
+                                <h3 class="title" id="chart1-title">Credit Utilized</h3>
+                                <h3 class="title" id="chart1-title4">$70,000</h3>
+                            </div>
+                        </div>
+                        <canvas id="exchangeRates"></canvas>
+                    </section>
+                        <section role="chart" class="efficiency">
+                            <h3 class="title">Credit Usage</h3>
+                            <canvas id="efficiency"></canvas>
+                        </section>
+                        <section role="chart" class="last-costs">
+                            <h3 class="title">Spending Insights</h3>
+                            <canvas id="last_costs"></canvas>
+                        </section>
+                    </div>
+            </main>
+        </div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
+    <script src='https://ozcanzaferayan.github.io/financial-crm/vendor/chartjs/Chart.roundedBarCharts.js'></script>
+    <script src="js/dash.js"></script>
+    <script>
+        function myFunction() {
+            window.location.href = 'cards.html';
+        }
+    </script>
+</body>
+
+</html>

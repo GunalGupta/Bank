@@ -83,7 +83,7 @@ document.querySelector('.nav__links').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav__link')) {
     const id = e.target.getAttribute('href');
     if (!id) {
-      location.href = 'app.html'
+      location.href = 'login.html'
     }
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     console.log(id);
