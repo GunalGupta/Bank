@@ -3,10 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Account | Settings</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"rel="stylesheet" /> -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css'>
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <title>Account | Support</title>
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
     <link rel="stylesheet" href="css/support.css">
 </head>
 
@@ -56,16 +57,6 @@
                             Subscriptions
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="#"
-                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
-                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                            </svg>
-                            Statements
-                        </a>
-                    </li> -->
                     <li>
                         <a href="transaction.html"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
@@ -95,7 +86,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            Settings
+                            Support
                         </a>
                     </li>
                 </ul>
@@ -106,11 +97,53 @@
             </div>
         </aside>
         <div class="flex-grow bg-gray-100">
-
+            <div class="container">
+                <div class="row">
+                <div class="col-md-6">
+                  <h1>Let's get you</br> some help!</h1>
+                  <h6>Have any issue? Send us an <span class="email-us">email.</span></h6>
+                  <div class="img-wrapper">
+                  <img src="img/onboard.png" alt="Help" id="help-img">
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                  <form>
+                <div class="form-group">
+                  <label for="list">Name</label>
+                  <input type="text" class="form-control" id="list" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <label for="tags">Subject</label>
+                  <input type="text" class="form-control" id="tags">
+                </div>
+                    
+                  <div class="form-group">
+                  <label for="describe">Please desribe the issue you are facing ?</label>
+                  <textarea type="text" class="form-control" id="describe" rows="5"></textarea>
+                </div>
+                    
+                    <div class="form-group">
+                  <label for="exampleFormControlSelect1">Select Category</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Account Related</option>
+                    <option>Report Fraud Transactions</option>
+                    <option>Issue with a transaction</option>
+                    <option>Regarding Pro Account</option>
+                    <option>Unknown Charges Deduction</option>
+                    <option>Others</option>
+                  </select>
+                </div>
+                          
+              <button type="button" class="btn btn-primary"><span>Submit</span> <i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+                  
+                </div>
+              </div>
         </div>
     </div>
     <!-- partial -->
-
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
 </body>
 
 </html>

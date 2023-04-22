@@ -260,14 +260,18 @@ main section[role="chart"] {
 
 section[role="chart"] .title {
     color: var(--black);
+
     font-weight: 700;
     margin-top: 0;
 }
+
+
 
 #charts-title{
     display: flex; 
     flex-direction: row;
     margin-top: 0.3em;
+    /* line-height: 1em; */
 }
 
 #chart1-title1{
