@@ -3,58 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
     <title>Login</title>
 </head>
 <body>
-    
-    <div class="hero">
-        <div class="form-box">
-          <div class="div button-box">
-            <div id="btn"></div>
-            <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-            <button type="button" class="toggle-btn" onclick="register()">Register</button>
-          </div>
-      <div>
-        <img class="bank-logo" src="img/bank_favicon.png" alt="Logo" width="70" height="70">
-      </div>
-          <form id="login" class="input-group">
-            <input type="text" class="input-field" placeholder="Username" required>
-            <input type="text" class="input-field" placeholder="Password" required>
-            <input type="checkbox" class="check-box"><span>Remember Password</span>
-            <button class="submit-btn" type="submit">Log In</button>
-          </form>
-      
-          <form id="register" class="input-group">
-            <input type="text" class="input-field" placeholder="Username" required>
-            <input type="email" class="input-field" placeholder="Email" required>
-            <input type="text" class="input-field" placeholder="Password" required>
-            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-            <button class="submit-btn" type="submit">Register
-            </button>
-        </form>
-      </div>
-    </div>
+  <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
 
-    <script>
-        var x = document.getElementById("login");
-var y = document.getElementById("register");
-var z = document.getElementById("btn");
+			<div class="signup">
+				<form>
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
 
-function register() {
-  x.style.left = "-400px";
-  y.style.left = "50px";
-  z.style.left = "110px";
-}
+			<div class="login">
+				<form>
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="email" placeholder="Email" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Login</button>
+				</form>
+			</div>
+	</div>
 
-function login() {
-  x.style.left = "50px";
-  y.style.left = "450px";
-  z.style.left = "0px";
-}
-    </script>
-
+  <div>
+    <img src="img/new_logo.png" alt="Logo" width="300" height="300" id="logo-login">
+    <h3 id="text-logo">The Bank you deserve</h3>
+  </div>
         
 </body>
 </html>
