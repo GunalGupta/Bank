@@ -47,6 +47,39 @@
     box-shadow: inset 0.25rem 0 0 0 #805ad5;
 }
 
+#Pro-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:.75rem;
+    padding-bottom:.75rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    --bg-opacity:1;
+    background-color:#e9d8fd;
+    background-color:rgba(233,216,253,var(--bg-opacity));
+    --bg-opacity:0.5;
+    border-radius:.375rem;
+    margin-top:auto;
+    margin-bottom:2.5rem;
+    margin-left:2rem;
+    margin-right:2rem;
+}
+
+.Pro-text-head{
+    font-weight:600;
+    --text-opacity:1;
+    color:#1a202c;
+    color:rgba(26,32,44,var(--text-opacity));
+}
+
+#Pro-text{
+    --text-opacity:1;
+    color:#805ad5;
+    color:rgba(128,90,213,var(--text-opacity));
+    font-weight:500;
+    text-decoration:underline
+}
 
 /*HEADER*/
 main {
@@ -207,7 +240,7 @@ main section[role="credit-card"] img {
 }
 
 main section[role="credit-card"] img.apple_pay {
-    width: 3em;
+    width: 4.2em;
 }
 
 main section[role="credit-card"] .top {
