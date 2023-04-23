@@ -107,69 +107,88 @@
             <main>
                 <div class="ml-auto flex items-center space-x-3">
                     <h1>Overview</h1>
-                        <button style="margin-left: 60%;"
-                            class="p-2 text-gray-600 relative bg-white rounded-full shadow hover:bg-gray-100 hover:text-gray-700">
-                            <span class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full mt-1 mr-2"></span>
-                            <span
-                                class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full mt-1 mr-2 animate-ping"></span>
-                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
-                            </svg>
-                        </button>
-                        <button class="h-10 w-10 bg-gray-200 border shadow rounded-full overflow-hidden">
-                            <img style="background-color: #000;" src="img\user4.png"
-                                class="h-full w-full object-cover" />
-                        </button>
+                    <button style="margin-left: 60%;"
+                        class="p-2 text-gray-600 relative bg-white rounded-full shadow hover:bg-gray-100 hover:text-gray-700">
+                        <span class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full mt-1 mr-2"></span>
+                        <span
+                            class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full mt-1 mr-2 animate-ping"></span>
+                        <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                    </button>
+                    <button class="h-10 w-10 bg-gray-200 border shadow rounded-full overflow-hidden" onclick="menuToggle();">
+                        <img style="background-color: #000;" src="img\user4.png" class="h-full w-full object-cover" />
+                    </button>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <img src="img/dashboard/user.png" /><a href="#">My profile</a>
+                            </li>
+                            <li>
+                                <img src="img/dashboard/edit.png" /><a href="#">Edit profile</a>
+                            </li>
+                            <li>
+                                <img src="img/dashboard/envelope.png" /><a href="#">Inbox</a>
+                            </li>
+                            <li><img src="img/dashboard/question.png" /><a href="support.html">Help</a></li>
+                            <li>
+                                <img src="img/dashboard/log-out.png" /><a href="#">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                    <div class="charts-wrapper">
-                        <section role="credit-card" onclick="myFunction()">
-                            <div class="top">
-                                <img src="img/dashboard/mastercard.svg" />
-                                <img src="img/dashboard/apple_pay.svg" class="apple_pay" />
+                <div class="charts-wrapper">
+                    <section role="credit-card" onclick="myFunction()">
+                        <div class="top">
+                            <img src="img/dashboard/mastercard.svg" />
+                            <img src="img/dashboard/apple_pay.svg" class="apple_pay" />
+                        </div>
+                        <div class="ccNumber">
+                            <span>˙˙˙˙ ˙˙˙˙ ˙˙˙˙ 5610</span>
+                        </div>
+                        <div class="ccBottom">
+                            <div class="ccValidThru">
+                                <label>VALID THRU</label>
+                                <span>05/27</span>
                             </div>
-                            <div class="ccNumber">
-                                <span>˙˙˙˙ ˙˙˙˙ ˙˙˙˙ 5610</span>
+                            <div class="ccCardHolder">
+                                <label>CARD HOLDER</label>
+                                <span>Lara Page</span>
                             </div>
-                            <div class="ccBottom">
-                                <div class="ccValidThru">
-                                    <label>VALID THRU</label>
-                                    <span>05/27</span>
-                                </div>
-                                <div class="ccCardHolder">
-                                    <label>CARD HOLDER</label>
-                                    <span>Lara Page</span>
-                                </div>
-                            </div>
-                        </section>
-                        <section role="chart" class="exchange-rates">
+                        </div>
+                    </section>
+                    <section role="chart" class="exchange-rates">
                         <h3 class="title" id="chart1-title" style="font-size: 2em;">Networth</h3>
                         <h3 class="title" id="chart1-title1">$12,08,592</h3>
                         <div id="charts-title">
                             <div>
-                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">Balance</h3>
+                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">
+                                    Balance</h3>
                                 <h3 class="title" id="chart1-title2">$2,03,050</h3>
                             </div>
                             <div style="margin-left: 2em;">
-                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">Investmemts</h3>
+                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">
+                                    Investmemts</h3>
                                 <h3 class="title" id="chart1-title3">$10,05,442</h3>
                             </div>
                             <div style="margin-left: 2em;">
-                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">Credit Utilized</h3>
+                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">Credit
+                                    Utilized</h3>
                                 <h3 class="title" id="chart1-title4">$70,000</h3>
                             </div>
                         </div>
                         <canvas id="exchangeRates"></canvas>
                     </section>
-                        <section role="chart" class="efficiency">
-                            <h3 class="title">Credit Usage</h3>
-                            <canvas id="efficiency"></canvas>
-                        </section>
-                        <section role="chart" class="last-costs">
-                            <h3 class="title">Spending Insights</h3>
-                            <canvas id="last_costs"></canvas>
-                        </section>
-                    </div>
+                    <section role="chart" class="efficiency">
+                        <h3 class="title">Credit Usage</h3>
+                        <canvas id="efficiency"></canvas>
+                    </section>
+                    <section role="chart" class="last-costs">
+                        <h3 class="title">Spending Insights</h3>
+                        <canvas id="last_costs"></canvas>
+                    </section>
+                </div>
             </main>
         </div>
     </div>
@@ -180,6 +199,12 @@
     <script>
         function myFunction() {
             window.location.href = 'cards.html';
+        }
+    </script>
+    <script>
+        function menuToggle() {
+            const toggleMenu = document.querySelector(".menu");
+            toggleMenu.classList.toggle("active");
         }
     </script>
 </body>
