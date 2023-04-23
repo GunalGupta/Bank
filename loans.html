@@ -3,11 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Account</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
+    <title>Account | Subscriptions</title>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css'>
-    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/loans.css">
 </head>
 
 <body>
@@ -27,8 +25,8 @@
             <nav class="font-semibold text-gray-600 my-12">
                 <ul class="space-y-3">
                     <li>
-                        <a href="#"
-                            class="flex items-center px-8 py-3 bg-gradient-to-r from-purple-200 text-purple-600 inset-active-link">
+                        <a href="dashboard.html"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -56,16 +54,6 @@
                             Subscriptions
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="#"
-                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
-                            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
-                            </svg>
-                            Statements
-                        </a>
-                    </li> -->
                     <li>
                         <a href="transaction.html"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
@@ -77,8 +65,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="loans.html"
-                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                        <a href="#"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r from-purple-200 text-purple-600 inset-active-link">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -106,10 +94,11 @@
             </div>
         </aside>
         <div class="flex-grow bg-gray-100">
-            <main>
-                <div class="ml-auto flex items-center space-x-3">
-                    <h1>Overview</h1>
-                        <button style="margin-left: 60%;"
+            <header class="mt-12 px-16">
+                <div class="flex items-center mb-2">
+                    <h1 class="text-3xl font-semibold mr-4">Loans</h1>
+                    <div class="ml-auto flex items-center space-x-3">
+                        <button
                             class="p-2 text-gray-600 relative bg-white rounded-full shadow hover:bg-gray-100 hover:text-gray-700">
                             <span class="absolute top-0 right-0 h-3 w-3 bg-red-500 rounded-full mt-1 mr-2"></span>
                             <span
@@ -123,68 +112,74 @@
                             <img style="background-color: #000;" src="img\user4.png"
                                 class="h-full w-full object-cover" />
                         </button>
-                </div>
-                    <div class="charts-wrapper">
-                        <section role="credit-card" onclick="myFunction()">
-                            <div class="top">
-                                <img src="https://ozcanzaferayan.github.io/financial-crm/img/mastercard.svg" />
-                                <img src="https://ozcanzaferayan.github.io/financial-crm/img/apple_pay.svg"
-                                    class="apple_pay" />
-                            </div>
-                            <div class="ccNumber">
-                                <span>˙˙˙˙ ˙˙˙˙ ˙˙˙˙ 5610</span>
-                            </div>
-                            <div class="ccBottom">
-                                <div class="ccValidThru">
-                                    <label>VALID THRU</label>
-                                    <span>05/27</span>
-                                </div>
-                                <div class="ccCardHolder">
-                                    <label>CARD HOLDER</label>
-                                    <span>Lara Page</span>
-                                </div>
-                            </div>
-                        </section>
-                        <section role="chart" class="exchange-rates">
-                        <h3 class="title" id="chart1-title" style="font-size: 2em;">Networth</h3>
-                        <h3 class="title" id="chart1-title1">$12,08,592</h3>
-                        <div id="charts-title">
-                            <div>
-                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">Balance</h3>
-                                <h3 class="title" id="chart1-title2">$2,03,050</h3>
-                            </div>
-                            <div style="margin-left: 2em;">
-                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">Investmemts</h3>
-                                <h3 class="title" id="chart1-title3">$10,05,442</h3>
-                            </div>
-                            <div style="margin-left: 2em;">
-                                <h3 class="title" id="chart1-title" style="line-height: 2.5em; font-size: 1.1em;">Credit Utilized</h3>
-                                <h3 class="title" id="chart1-title4">$70,000</h3>
-                            </div>
-                        </div>
-                        <canvas id="exchangeRates"></canvas>
-                    </section>
-                        <section role="chart" class="efficiency">
-                            <h3 class="title">Credit Usage</h3>
-                            <canvas id="efficiency"></canvas>
-                        </section>
-                        <section role="chart" class="last-costs">
-                            <h3 class="title">Spending Insights</h3>
-                            <canvas id="last_costs"></canvas>
-                        </section>
                     </div>
-            </main>
+                </div>
+            </header>
+            <div class="loan-cards" id="loan-cards">
+                <div class="book">
+                    <div id="cover-inside">
+                        <h1>Loan Details</h1>
+                        <ul>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan ID:</span>
+                                <span id="Loan-ID" style="float: right;">BHR77365</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Type:</span>
+                                <span id="Loan-type" style="float: right;">Business</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Amount:</span>
+                                <span id="Loan-amount" style="float: right;">$1,20,000</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Tenure:</span>
+                                <span id="Loan-tenure" style="float: right;">5 Years</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Interest:</span>
+                                <span id="Loan-interest" style="float: right;">12%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cover">
+                        <p>Loan ID: BHR77365</p>
+                    </div>
+                </div>
+                <div class="book">
+                    <div id="cover-inside">
+                        <h1>Loan Details</h1>
+                        <ul>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan ID:</span>
+                                <span id="Loan-ID" style="float: right;">BHR97547</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Type:</span>
+                                <span id="Loan-type" style="float: right;">Personal</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Amount:</span>
+                                <span id="Loan-amount" style="float: right;">$80,000</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Tenure:</span>
+                                <span id="Loan-tenure" style="float: right;">1 Years</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Interest:</span>
+                                <span id="Loan-interest" style="float: right;">15%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cover">
+                        <p>Loan ID: BHR97547</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- partial -->
-    <script src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
-    <script src='https://ozcanzaferayan.github.io/financial-crm/vendor/chartjs/Chart.roundedBarCharts.js'></script>
-    <script src="js/dash.js"></script>
-    <script>
-        function myFunction() {
-            window.location.href = 'cards.html';
-        }
-    </script>
+        <!-- partial -->
+
 </body>
 
 </html>
