@@ -1076,3 +1076,52 @@ h4 {
 #img-text{
   color: #fff;
 }
+
+.pop-up {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+  
+}
+.pop-up-container{
+  height:100vh;
+  width:100%;
+  background:#000;
+  opacity:.5;
+  position:relative;
+  z-index:-1;
+  margin-top:-500px;
+}
+
+.pop-up-text {
+  box-sizing:border-box;
+  padding:20px;  
+}
+.pop-up-text h1{
+  font-size: 2.25rem;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+  color: #000;
+}
+.pop-up-text p{
+  font-size:1em;
+  margin-bottom:1em;
+  text-align: right;
+}
+.pop-up-text a {
+  color:#FF3D3D;
+  margin-bottom:10px;
+}
+.pop-up-text img {
+  max-height:250px;
+  width:100%;
+  text-align:center;
+  margin-bottom:10px;
+}
