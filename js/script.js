@@ -1,3 +1,11 @@
+$('.pop-up').hide(0);
+$('.pop-up-container').hide(0);
+
+$('.btn').click(function(){
+  modal.classList.add('hidden');
+  $('.pop-up').show();
+});
+
 'use strict';
 
 ///////////////////////////////////////

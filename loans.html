@@ -115,7 +115,7 @@
                 </div>
             </header>
             <div class="loan-cards" id="loan-cards">
-                <div class="book">
+                <div class="book" onclick="BookToggle1()">
                     <div id="cover-inside">
                         <h1>Loan Details</h1>
                         <ul>
@@ -141,11 +141,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="cover">
+                    <div class="cover1">
                         <p>Loan ID: BHR77365</p>
                     </div>
                 </div>
-                <div class="book">
+                <div class="book" onclick="BookToggle2()">
                     <div id="cover-inside">
                         <h1>Loan Details</h1>
                         <ul>
@@ -171,14 +171,36 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="cover">
+                    <div class="cover2">
                         <p>Loan ID: BHR97547</p>
                     </div>
                 </div>
             </div>
+            <div class="Noted">
+                <span id="Note">Note:</span>
+                <span>To apply for new loan, kindly visit to your nearest branch or</span>
+                <span id="Note-text" onclick="sendsupport()">contact support</span>
+                <span>.</span>
+            </div>
         </div>
         <!-- partial -->
-
+        <script>
+            function BookToggle1() {
+                const toggleNMenu = document.querySelector(".cover1");
+                toggleNMenu.classList.toggle("active");
+            }
+        </script>
+        <script>
+            function BookToggle2() {
+                const toggleNMenu = document.querySelector(".cover2");
+                toggleNMenu.classList.toggle("active");
+            }
+        </script>
+        <script>
+            function sendsupport() {
+                window.location.href = 'support.html';
+            }
+        </script>
 </body>
 
 </html>

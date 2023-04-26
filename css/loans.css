@@ -106,7 +106,7 @@
   color: #000;
 }
 
-.cover {
+.cover1 {
   top: 0;
   position: absolute;
   background-color: lightgray;
@@ -132,7 +132,7 @@
   justify-content: center;
 }
 
-.book:hover .cover {
+.cover1.active {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   -webkit-transform: rotatey(-80deg);
@@ -140,7 +140,46 @@
   transform: rotatey(-80deg);
 }
 
-.cover p {
+.cover1 p {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.cover2 {
+  top: 0;
+  position: absolute;
+  background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cover2.active {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+.cover2 p {
   font-size: 20px;
   font-weight: bolder;
 }
@@ -164,3 +203,20 @@
   padding: 10px;
 }
 
+.Noted{
+  margin: 25px;
+}
+
+.Noted span{
+  font-size: small;
+}
+
+#Note{
+  font-weight: bolder;
+}
+
+#Note-text{
+  font-style: oblique;
+  text-decoration: underline;
+  cursor: pointer;
+}
