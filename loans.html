@@ -176,6 +176,12 @@
                     </div>
                 </div>
             </div>
+            <div class="Noted">
+                <span id="Note">Note:</span>
+                <span>To apply for new loan, kindly visit to your nearest branch or</span>
+                <span id="Note-text" onclick="sendsupport()">contact support</span>
+                <span>.</span>
+            </div>
         </div>
         <!-- partial -->
         <script>
@@ -188,6 +194,11 @@
             function BookToggle2() {
                 const toggleNMenu = document.querySelector(".cover2");
                 toggleNMenu.classList.toggle("active");
+            }
+        </script>
+        <script>
+            function sendsupport() {
+                window.location.href = 'support.html';
             }
         </script>
 </body>

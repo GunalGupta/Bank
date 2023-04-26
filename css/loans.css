@@ -203,3 +203,20 @@
   padding: 10px;
 }
 
+.Noted{
+  margin: 25px;
+}
+
+.Noted span{
+  font-size: small;
+}
+
+#Note{
+  font-weight: bolder;
+}
+
+#Note-text{
+  font-style: oblique;
+  text-decoration: underline;
+  cursor: pointer;
+}
