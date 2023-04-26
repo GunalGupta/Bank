@@ -153,3 +153,24 @@ body {
     height: 270px;
     width: 80%;
 }
+
+.edit {
+    position: absolute;
+    color: #e7e7e8;
+    right: 14%;
+}
+
+#edit2{
+    top: 12em;
+}
+
+#edit3{
+    top: 14em;
+}
+
+#edit4{
+    top: 18em;
+}
+
+
+/* End */
