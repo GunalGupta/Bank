@@ -68,3 +68,77 @@
 .menu ul li:hover a {
   color: #ff5d94;
 }
+
+.view-menu {
+  position: absolute;
+  top: 320px;
+  right: 30px;
+  padding: 10px 20px;
+  background: #fff;
+  width: 200px;
+  box-sizing: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.view-menu.active {
+  top: 280px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.view-menu::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: 28px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.view-menu ul li {
+  list-style: none;
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+
+.view-menu ul li img {
+  max-width: 20px;
+  margin-right: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+#delete-img{
+  opacity: 0.3;
+}
+
+.view-menu ul li:hover img {
+  opacity: 1;
+}
+
+#extra:hover {
+  opacity: 1;
+}
+
+#extra:hover img{
+  opacity: 0.8;
+}
+
+.view-menu ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+.view-menu ul li:hover a {
+  color: #ff5d94;
+}  

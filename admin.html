@@ -129,13 +129,26 @@
                 <td class="sm:p-3 py-2 px-1 border-b border-gray-200 dark:border-gray-800">
                   <div class="flex items-center">
                     $1552.00
-                    <button class="w-8 h-8 inline-flex items-center justify-center text-gray-400 ml-auto">
+                    <button class="w-8 h-8 inline-flex items-center justify-center text-gray-400 ml-auto" onclick="viewmenuToggle()">
                       <svg viewBox="0 0 24 24" class="w-5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="1"></circle>
                         <circle cx="19" cy="12" r="1"></circle>
                         <circle cx="5" cy="12" r="1"></circle>
                       </svg>
                     </button>
+                    <div class="view-menu">
+                      <ul>
+                          <li>
+                              <img src="img/dashboard/user.png" /><a href="">View profile</a>
+                          </li>
+                          <li>
+                              <img src="img/dashboard/edit.png" /><a href="">Edit profile</a>
+                          </li>
+                          <li id="extra">
+                              <img src="img/dashboard/delete.jpg" id="delete-img"><a href="">Delete Profile</a>
+                          </li>
+                      </ul>
+                  </div>
                   </div>
                 </td>
               </tr>
@@ -628,6 +641,12 @@
 <script>
   function menuToggle() {
       const toggleMenu = document.querySelector(".menu");
+      toggleMenu.classList.toggle("active");
+  }
+</script>
+<script>
+  function viewmenuToggle() {
+      const toggleMenu = document.querySelector(".view-menu");
       toggleMenu.classList.toggle("active");
   }
 </script>
