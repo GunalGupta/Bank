@@ -18,10 +18,11 @@ This is a web application project developed for the *Database Management course 
   
 ## How to Run the website
 To run the application, you need to follow these steps:
-1. Install a web server like Apache and a database management system like MySQL on your local machine.
-2. Create a database called `bank_db` in MySQL and import the `database.sql` file included in the project repository.
-3. Copy the project files to the root directory of your web server.
-4. Open the `index.html` file in your web browser.
+1. Install NodeJS on your local machine.
+2. Extract the project files in a folder named "bank".
+3. Create a database called `project` in MySQL and import the `database.sql` file included in the project repository else you can rename the database and update the same in extracted project files onnection code.
+4. Open the folder in VS Code or any other IDE.
+5. Open a new terminal and type the below code
 
 ## Screenshots
 - **HomePage**
