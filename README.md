@@ -28,6 +28,7 @@ To run the application, you need to follow these steps:
 npm init
 ```
 Press `Enter` until you get to the root path as attached in image, Additonally you will get a `package.json` file in your folder.
+
 <img width="356" alt="image" src="https://user-images.githubusercontent.com/98680299/235350215-430734e7-4242-439c-8998-7e6aaa489976.png">
 
 6. Now install Express and other stack by typing below line in terminal.
@@ -42,6 +43,7 @@ npm install --save-dev nodemon
 ```
 
 Your `Bank` folder would be consiting the files :
+
 <img width="102" alt="image" src="https://user-images.githubusercontent.com/98680299/235350493-c4f57d23-05ed-4923-8356-0a819e643123.png">
 
 8. Now in your `package.json` file add the below code lines in `scripts`
