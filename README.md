@@ -52,7 +52,9 @@ Your `Bank` folder would be consiting the files :
   },
   ```
  9. To run the project, enter the below line in terminal
- ```npm start ```
+ ```
+ npm start 
+ ```
 
 ## Screenshots
 - **HomePage**
