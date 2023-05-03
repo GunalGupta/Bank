@@ -1,0 +1,129 @@
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.material-form {
+  display: block;
+  width: 300px;
+  padding: 10px 5px;
+  background-color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px 0 rgba(128, 128, 128, 0.35);
+  overflow: hidden;
+  height: fit-content;
+}
+.material-form__container {
+  position: relative;
+  width: 90%;
+  margin: 3px auto;
+  padding: 2px 0;
+}
+.material-form__container:nth-child(1) {
+  margin-top: 0;
+}
+.material-form__label {
+  position: absolute;
+  font-family: sans-serif;
+  font-weight: bold;
+  transform: translateY(-50%);
+  transition: all 0.25s;
+}
+.material-form__input {
+  width: 100%;
+  padding: 10px 0;
+  color: #444;
+  font-weight: bold;
+  box-shadow: 0 -2px #f3f3f3 inset;
+  border: none;
+  outline: none;
+}
+.material-form__input[type=password] {
+  letter-spacing: 7px;
+}
+.material-form__input:placeholder-shown:valid ~ .material-form__label {
+  left: 0;
+  top: 50%;
+  color: #ccc;
+  font-size: 1em;
+}
+.material-form__input:placeholder-shown:focus ~ .material-form__label, .material-form__input:not(:placeholder-shown) ~ .material-form__label {
+  top: 0;
+  left: 0;
+  font-size: 0.75em;
+}
+.material-form__input:placeholder-shown:focus ~ .material-form__label {
+  color: #2196F3;
+}
+.material-form__input:placeholder-shown:focus ~ .material-form__focus-animation {
+  background-color: #2196F3;
+}
+.material-form__input:valid ~ .material-form__label {
+  color: #00E676;
+}
+.material-form__input:valid:not(:placeholder-shown) ~ .material-form__focus-animation {
+  background-color: #00E676;
+}
+.material-form__input:invalid ~ .material-form__label {
+  color: #F44336;
+}
+.material-form__input:invalid ~ .material-form__focus-animation {
+  background-color: #F44336;
+}
+.material-form__input:focus ~ .material-form__focus-animation {
+  width: 100%;
+  left: 0;
+}
+.material-form__input:not(:focus):invalid ~ p {
+  transform: translate(0, 5px);
+}
+.material-form__focus-animation {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  height: 3px;
+  width: 0;
+  transition: all 0.25s;
+}
+.material-form__error {
+  position: absolute;
+  transform: translate(-250px, 5px);
+  color: #F44336;
+  font-size: 0.75em;
+  font-family: sans-serif;
+  transition: all 0.25s;
+}
+.material-form__button {
+  line-height: 50px;
+  width: 100%;
+  margin-top: 15px;
+  background-color: #2196F3;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+.material-form__button:hover {
+  background-color: #51adf6;
+  transform: scale(1.1);
+}
+.material-form__button:active {
+  background-color: #0960a5;
+  transform: scale(0.9);
+}
