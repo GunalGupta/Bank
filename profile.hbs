@@ -1,27 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
-
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="css/employee_profile.css">
-
-    <!-- FontAwesome 5 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-</head>
-<body>
-    <!-- Navbar top -->
-    <div class="navbar-top">
+ <div class="navbar-top">
         <div class="title">
             <h1 style="text-align: center;">Profile</h1>
         </div>
 
         <!-- Navbar -->
         <ul>
+            <!-- <li>
+                <a href="#message">
+                    <span class="icon-count">29</span>
+                    <i class="fa fa-envelope fa-2x"></i>
+                </a>
+            </li> -->
+            <!-- <li>
+                <a href="#notification">
+                    <span class="icon-count">59</span>
+                    <i class="fa fa-bell fa-2x"></i>
+                </a>
+            </li> -->
             <li>
-                <a href="admin.html">
+                <a href="dashboard?username={{user.username}}">
                     <i class="fa fa-sign-out-alt fa-2x"></i>
                 </a>
             </li>
@@ -33,22 +30,24 @@
     <!-- Sidenav -->
     <div class="sidenav">
         <div class="profile">
-            <img src="https://images.unsplash.com/photo-1521587765099-8835e7201186?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ" alt="profile" width="100" height="100">
+            <img src="img/user-image.jpg" alt="" width="100" height="100">
 
             <div class="name">
-                Aditya Singh
+                {{user.name}}
             </div>
             <div class="job">
-                Accountant
+                @{{user.username}}
             </div>
         </div>
 
         <div class="sidenav-url">
             <div class="url">
                 <a href="#profile" class="active">Profile</a>
+                <hr align="center">
             </div>
             <div class="url">
-                <a href="#settings">Settings</a>
+                <a href="editprofile?username={{user.username}}">Settings</a>
+                <hr align="center">
             </div>
         </div>
     </div>
@@ -65,33 +64,34 @@
                         <tr>
                             <td>Name</td>
                             <td>:</td>
-                            <td>Aditya Singh</td>
+                            <td>{{user.name}}</td>
                         </tr>
                         <tr>
-                            <td>Gender</td>
+                            <td>Username</td>
                             <td>:</td>
-                            <td>M</td>
+                            <td>{{user.username}}</td>
                         </tr>
                         <tr>
-                            <td>Email</td>
+                            <td>Contact No</td>
                             <td>:</td>
-                            <td>adityasingh@bankhamara.com</td>
+                            <td>{{user.contact_no}}</td>
                         </tr>
                         <tr>
                             <td>Address</td>
                             <td>:</td>
-                            <td>Wall Street, USA</td>
+                            <td> {{user.city}}, {{user.state}}, India</td>
                         </tr>
                         <tr>
-                            <td>Employee ID</td>
+                            <td>Pin Code</td>
                             <td>:</td>
-                            <td>006</td>
+                            <td>{{user.pincode}}</td>
                         </tr>
                         <tr>
-                            <td>Job</td>
+                            <td>Government ID</td>
                             <td>:</td>
-                            <td>Accountant</td>
+                            <td>{{user.GovernmentID}}</td>
                         </tr>
+                        
                     </tbody>
                 </table>
             </div>
@@ -101,6 +101,3 @@
 </body>
 </html>
 <!-- partial -->
-  
-</body>
-</html>

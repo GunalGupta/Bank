@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="shortcut icon" type="image/png" href="img/bank_favicon.png" media="(prefers-color-scheme: light)"/>
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/new_logo.png"
-      media="(prefers-color-scheme: dark)"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Bank Hamara</title>
-    <!--load all html content first then fetch js then trigger domcontentloaded //its a good approach to make page faster -->
-    <script defer src="./js/script.js"></script>
-
-</head>
-
-<body>
-    <header class="header">
+ <header class="header">
         <nav class="nav">
-            <img src="img/new_logo.png" alt="Bankist logo" class="nav__logo" id="logo" designer="Ved Vekhande"
+            <img src="../img/new_logo.png" alt="Bankist logo" class="nav__logo" id="logo" designer="Ved Vekhande"
                 data-version-number="3.0" />
             <ul class="nav__links">
                 <li class="nav__item">
@@ -33,14 +10,15 @@
                 <li class="nav__item">
                     <a class="nav__link" href="#section--2">About Us</a>
                 </li>
-                <li class="nav__item">
-                    <a class="nav__link">Login</a>
-                </li>
+                {{!-- <li class="nav__item">
+                    <a class="nav__link" href="/login">Login</a>
+                </li> --}}
                 <li class="nav__item">
                     <a class="nav__link" href="#section--3">Reviews</a>
                 </li>
                 <li class="nav__item">
-                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Open account</a>
+                    <a class="nav__link nav__link--btn btn--show-modal" href="/login">Open account</a>
+                    {{!-- <a href="/adduser" id="open-account">Open your free account today!</a> --}}
                 </li>
             </ul>
         </nav>
@@ -58,9 +36,23 @@
                
                 <p class="subtitle"> The Future of Online Banking</p>
                 <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+                <br> <br> <br>
+                {{!-- <div class="aurora"> --}}
+              <button class="loginbutton" onclick="myFunction()">Login</button>
+
+<script>
+function myFunction() {
+  window.location.href = "/login";
+}
+</script>
+
+                
+                {{!-- </div> --}}
+              
               </div>
+              
               <div>
-                <img src="img/new_women_edited.jpg" alt="Women" height="380" width="520" class="women" id="women_img">
+                <img src="../img/new_women_edited.jpg" alt="Women" height="380" width="520" class="women" id="women_img">
                </div>
             <!-- <h1>
                 When
@@ -85,11 +77,11 @@
         </div>
 
         <div class="features">
-            <img src="img/digital-lazy.jpg" data-src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
+            <img src="../img/digital-lazy.jpg" data-src="img/digital.jpg" alt="Computer" class="features__img lazy-img" />
             <div class="features__feature">
                 <div class="features__icon">
                     <svg>
-                        <use xlink:href="img/icons.svg#icon-monitor"></use>
+                        <use xlink:href="../img/icons.svg#icon-monitor"></use>
                     </svg>
                 </div>
                 <h5 class="features__header">100% digital bank</h5>
@@ -101,7 +93,7 @@
             <div class="features__feature">
                 <div class="features__icon">
                     <svg>
-                        <use xlink:href="img/icons.svg#icon-trending-up"></use>
+                        <use xlink:href="../img/icons.svg#icon-trending-up"></use>
                     </svg>
                 </div>
                 <h5 class="features__header">Watch your money grow</h5>
@@ -113,13 +105,13 @@
 
                 </p>
             </div>
-            <img src="img/grow-lazy.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
+            <img src="../img/grow-lazy.jpg" data-src="img/grow.jpg" alt="Plant" class="features__img lazy-img" />
 
-            <img src="img/card-lazy.jpg" data-src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
+            <img src="../img/card-lazy.jpg" data-src="img/card.jpg" alt="Credit card" class="features__img lazy-img" />
             <div class="features__feature">
                 <div class="features__icon">
                     <svg>
-                        <use xlink:href="img/icons.svg#icon-credit-card"></use>
+                        <use xlink:href="../img/icons.svg#icon-credit-card"></use>
                     </svg>
                 </div>
                 <h5 class="features__header">Free debit card included</h5>
@@ -153,7 +145,7 @@
             <div class="operations__content operations__content--1 operations__content--active">
                 <div class="operations__icon operations__icon--1">
                     <svg>
-                        <use xlink:href="img/icons.svg#icon-upload"></use>
+                        <use xlink:href="../img/icons.svg#icon-upload"></use>
                     </svg>
                 </div>
                 <h5 class="operations__header">
@@ -167,7 +159,7 @@
             <div class="operations__content operations__content--2">
                 <div class="operations__icon operations__icon--2">
                     <svg>
-                        <use xlink:href="img/icons.svg#icon-home"></use>
+                        <use xlink:href="../img/icons.svg#icon-home"></use>
                     </svg>
                 </div>
                 <h5 class="operations__header">
@@ -180,7 +172,7 @@
             <div class="operations__content operations__content--3">
                 <div class="operations__icon operations__icon--3">
                     <svg>
-                        <use xlink:href="img/icons.svg#icon-user-x"></use>
+                        <use xlink:href="../img/icons.svg#icon-user-x"></use>
                     </svg>
                 </div>
                 <h5 class="operations__header">
@@ -203,7 +195,7 @@
         <div class="container">
 
         <figure class="snip1529">
-            <img src="img/credit-suisse.jpeg" alt="pr-sample13" />
+            <img src="../img/credit-suisse.jpeg" alt="pr-sample13" />
             <div class="date"><span class="day">08</span><span class="month">Apr</span></div>
             <figcaption>
               <h3>Bank Hamara acquired Credit Suisse</h3>
@@ -212,7 +204,7 @@
             <div class="hover"><i class="ion-android-open"></i></div>
             <a href="#"></a>
           </figure>
-          <figure class="snip1529"><img src="img/svb1.jpg" alt="pr-sample21" />
+          <figure class="snip1529"><img src="../img/svb1.jpg" alt="pr-sample21" />
             <div class="date"><span class="day">17</span><span class="month">Feb</span></div>
             <figcaption>
               <h3>Rescue of SVB from bankrupting </h3>
@@ -221,7 +213,7 @@
             <div class="hover"><i class="ion-android-open"></i></div>
             <a href="#"></a>
           </figure>
-          <figure class="snip1529"><img src="img/rbi.png" alt="pr-sample23" />
+          <figure class="snip1529"><img src="../img/rbi.png" alt="pr-sample23" />
             <div class="date"><span class="day">23</span><span class="month">Jan</span></div>
             <figcaption>
               <h3>RBI to ask merger with Bank Hamara</h3>
@@ -230,7 +222,7 @@
             <div class="hover"><i class="ion-android-open"></i></div>
             <a href="#"></a>
           </figure>
-          <figure class="snip1529"><img src="img/ubs.jpg" alt="pr-sample23" />
+          <figure class="snip1529"><img src="../img/ubs.jpg" alt="pr-sample23" />
             <div class="date"><span class="day">03</span><span class="month">Dec</span></div>
             <figcaption>
               <h3>Bank Hamara to fund Swiss Bank</h3>
@@ -258,7 +250,7 @@
                         I have been using this banking website for a while now and I must say that I am impressed with how easy it is to navigate through the website. The interface is user-friendly and I can easily access all the features I need without any hassle.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user10.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user10.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">La Sierna</h6>
                         <p class="testimonial__location">CTO, Microsoft</p>
                     </address>
@@ -274,7 +266,7 @@
                         I recently switched to this banking website and I am extremely satisfied with their services. The website is fast and responsive and I have never faced any issues while using it.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user2.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user2.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Leah Gotti</h6>
                         <p class="testimonial__location">Managing Director, Nrop Buh</p>
                     </address>
@@ -290,7 +282,7 @@
                         This banking website has been a lifesaver for me! I can easily manage my finances from the comfort of my home without having to visit a bank branch. The website is secure and I feel safe while using it.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user3.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user3.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Della Gomes</h6>
                         <p class="testimonial__location">CEO, Apple Inc.</p>
                     </address>
@@ -305,7 +297,7 @@
                         I have been using this banking website for a few months now and I must say that it has exceeded my expectations. The customer support team is extremely helpful and responsive and they have helped me resolve any issues I faced while using the website.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user4.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user-image.jpg" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Lara Page</h6>
                         <p class="testimonial__location">Managing Director, Google</p>
                     </address>
@@ -320,7 +312,7 @@
                         I recently switched to this banking website and I am extremely impressed with their services. The website is user-friendly and I can easily access all the features I need without any hassle.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user5.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user5.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Avneet Kaur</h6>
                         <p class="testimonial__location">Director, Adobe</p>
                     </address>
@@ -335,7 +327,7 @@
                         This banking website is amazing! It has all the features I need to manage my finances effectively. The interface is user-friendly and I can easily access all the information I need.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user6.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user6.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Mithila Palker</h6>
                         <p class="testimonial__location">Tech Head, Twitter</p>
                     </address>
@@ -350,7 +342,7 @@
                         I have been using this banking website for a while now and I must say that it is one of the best out there. The website is fast, secure, and easy to use. I would highly recommend it to anyone looking for a reliable banking website.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user7.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user7.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Samantha Prabhu</h6>
                         <p class="testimonial__location">India Head, Mathworks</p>
                     </address>
@@ -365,7 +357,7 @@
                         This banking website has made my life so much easier! I can easily manage my finances from anywhere in the world without having to worry about security issues. The customer support team is also extremely helpful and responsive.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user8.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user8.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Selena Gomez</h6>
                         <p class="testimonial__location">Manager, Amazon</p>
                     </address>
@@ -380,7 +372,7 @@
                         I have been using this banking website for a long time now and I must say that it has never let me down. The website is fast, secure, and easy to use. I would highly recommend it to anyone looking for a reliable banking website.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user9.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user9.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Gabbie Carter</h6>
                         <p class="testimonial__location">CEO, JP Morgan</p>
                     </address>
@@ -395,7 +387,7 @@
                         I have been using this banking website for over a year now and I must say that I am extremely satisfied with their services. The website is fast and responsive and I have never faced any issues while using it.
                     </blockquote>
                     <address class="testimonial__author">
-                        <img src="img/user1.png" alt="" class="testimonial__photo" />
+                        <img src="../img/user1.png" alt="" class="testimonial__photo" />
                         <h6 class="testimonial__name">Mia Melano</h6>
                         <p class="testimonial__location">CTO, Goldman Sachs</p>
                     </address>
@@ -419,7 +411,9 @@
                 The best day to join Bank Hamara was one year ago. The second best is today!
             </h3>
         </div>
-        <button class="btn btn--show-modal">Open your free account today!</button>
+        <button class="btn btn--show-modal">
+             <a href="/login" id="open-account">Open your free account today!</a>
+             </button>
     </section>
 
     
@@ -448,7 +442,7 @@
                 <a class="footer__link" href="#section--1">About</a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="#">Pricing</a>
+                <a class="footer__link" href="adminlogin">Admin Login</a>
             </li>
             <li class="footer__item">
                 <a class="footer__link" href="#">Terms of Use</a>
@@ -468,40 +462,33 @@
         </ul>
 
        
-        <img src="img/new_logo.png" alt="Logo" class="footer__logo" />
+        <img src="../img/new_logo.png" alt="Logo" class="footer__logo" />
         <p class="footer__copyright">
             Made with ❤️ for our DBMS Project
         </p>
     </footer>
+ <div class="modal hidden">
+    <div>
 
-    <div class="modal hidden">
+    
         <button class="btn--close-modal">&times;</button>
         <h2 class="modal__header">
             Open your bank account <br />
             in just <span class="highlight">5 minutes</span>
         </h2>
-        <form class="modal__form">
-            <label>First Name</label>
-            <input type="text" />
-            <label>Last Name</label>
-            <input type="text" />
-            <label>Email Address</label>
-            <input type="email" />
-            <button class="btn">Next step &rarr;</button>
+        <form class="modal__form" method="POST" action="/adduser" novalidate>
+            <label>Name</label>
+            <input type="text" class="form-control" id="floatingInput" value="{{this.name}}" placeholder="Name" name="name" />
+            <label>Username</label>
+            <input type="text" class="form-control" id="floatingInput" value="{{this.username}}" placeholder="Username" name="username" />
+            <label>Contact number</label>
+            <input type="text" class="form-control" id="floatingInput" value="{{this.contact_no}}" placeholder="Contact Number" name="contact_no"/>
+            <label>Password</label>
+            <input type="password" class="form-control" id="floatingInput" value="{{this.password}}" placeholder="Password" name="password"/>
+              <div class="col-12 d-grid">
+    <button class="btn btn-primary" type="submit">Submit</button>
+  </div>
         </form>
     </div>
-    <div class="overlay hidden"></div>
-    <div class="pop-up">
-        <div class="pop-up-text">
-          <h1 class="highlight">Congratulations account created successfully</h1>
-          <p>Kindly move to login page for further process</p>
-        </div>
     </div>
-    <div class="pop-up-container"></div>
-    <!-- its better to put script tag on the last when use multiple script tag and local script tag cooperate with those file  -->
-    <!-- <script src="./js/script.js"></script> -->
-    <!-- <script src="./js/experiment.js"></script> -->
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-</body>
-
-</html>
+    <div class="overlay hidden"></div>

@@ -1,0 +1,47 @@
+<form class="material-form" action="/edituser/{{this.username}}" method="POST">
+
+  <div class="material-form__container">
+  
+  <label for="username">Username:</label>
+  <input class="material-form__input" type="text" id="username" name="username" value="{{user.username}}" disabled>
+  </div>
+  <div class="material-form__container">
+  <label for="name">Name:</label>
+  <input class="material-form__input" type="text" id="name" name="name" value="{{user.name}}">
+  </div>
+  <div class="material-form__container">
+  <label for="contact-no">Contact No:</label>
+  <input class="material-form__input" type="text" id="contact-no" name="contact_no" value="{{user.contact_no}}">
+  </div>
+  <div class="material-form__container">
+  <label for="state">State:</label>
+  <input class="material-form__input" type="text" id="state" name="state" value="{{user.state}}">
+  </div>
+  <div class="material-form__container">
+  <label for="city">City:</label>
+  <input class="material-form__input" type="text" id="city" name="city" value="{{user.city}}">
+  </div>
+  <div class="material-form__container">
+  <label for="pincode">Pincode:</label>
+  <input class="material-form__input" type="text" id="pincode" name="pincode" value="{{user.pincode}}">
+  </div>
+  <div class="material-form__container">
+  <label for="password">Password:</label>
+  <input class="material-form__input" type="password" id="password" name="password" value="{{user.password}}">
+  </div>
+  <div class="material-form__container">
+  <label for="balance">Balance:</label>
+  <input class="material-form__input" type="text" id="balance" name="balance" value="{{user.balance}}">
+  </div>
+  <div class="material-form__container">
+  <label for="governmentID">Government ID:</label>
+  <input class="material-form__input" type="text" id="governmentID" name="governmentID" value="{{user.governmentID}}">
+    </div>
+    <div class="material-form__container">
+  <label for="governmentID">Account No:</label>
+  <input class="material-form__input" type="text" id="account_no" name="account_no" value="{{user.account_no}}">
+  </div>
+  
+  <button type="submit" class="material-form__button">Save changes</button>
+</form>
+

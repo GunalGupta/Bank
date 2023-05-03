@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Account | Support</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="css/support.css">
-</head>
-
-<body>
-    <div class="flex text-gray-800 min-h-screen overflow-x-hidden">
+  <div class="flex text-gray-800 min-h-screen overflow-x-hidden">
         <aside class="hidden asid">
             <a href="#" class="flex items-center mx-auto my-12">
                 <div id="rounded-full-logo">
@@ -24,7 +13,7 @@
             <nav class="font-semibold text-gray-600 my-12">
                 <ul class="space-y-3">
                     <li>
-                        <a href="dashboard.html"
+                        <a href="dashboard?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -34,7 +23,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="cards.html"
+                        <a href="cards?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -44,7 +33,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="subscriptions.html"
+                        <a href="subscriptions?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -54,7 +43,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="transaction.html"
+                        <a href="transaction?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -64,8 +53,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="loans.html"
-                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
+                        <a href="#"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r from-purple-200 text-purple-600 inset-active-link">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -74,8 +63,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="flex items-center px-8 py-3 bg-gradient-to-r from-purple-200 text-purple-600 inset-active-link">
+                        <a href="support?username={{user.username}}"
+                            class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
@@ -87,15 +76,15 @@
                     </li>
                 </ul>
             </nav>
-            <div class="flex flex-col items-center py-3 px-4 bg-purple-200 bg-opacity-50 rounded-md mt-auto mb-10 mx-8">
-                <span class="font-semibold text-gray-900">Start saving!</span>
-                <a href="#" class="text-purple-600 font-medium underline">Upgrade to PRO</a>
+            <div id="Pro-up">
+                <span class="Pro-text-head">Start saving!</span>
+                <a href="#" id="Pro-text">Upgrade to PRO</a>
             </div>
         </aside>
         <div class="flex-grow bg-gray-100">
             <header class="mt-12 px-16">
                 <div class="flex items-center mb-2">
-                    <h1 class="text-3xl font-semibold mr-4">Need Help ?</h1>
+                    <h1 class="text-3xl font-semibold mr-4">Loans</h1>
                     <div class="ml-auto flex items-center space-x-3">
                         <button
                             class="p-2 text-gray-600 relative bg-white rounded-full shadow hover:bg-gray-100 hover:text-gray-700">
@@ -108,58 +97,93 @@
                             </svg>
                         </button>
                         <button class="h-10 w-10 bg-gray-200 border shadow rounded-full overflow-hidden">
-                            <img style="background-color: #000;" src="img\user4.png"
+                            <img style="background-color: #000;" src="img\user-image.jpg"
                                 class="h-full w-full object-cover" />
                         </button>
                     </div>
                 </div>
             </header>
-            <div class="container">
-                <div class="row">
-                <div class="col-md-6">
-                    <h1>Let's get you</br> some help!</h1>
-                    <h6>Have any issue? Send us an <span class="email-us"><a href="mailto:support@bankhamara.com">email.</a></span></h6>
-                    <div class="img-wrapper">
-                        <img src="img/dashboard/onboard.png" alt="Help" id="help-img">
+            <div class="loan-cards" id="loan-cards">
+                 <div class="book" onclick="BookToggle1()">
+                    <div id="cover-inside">
+                        <h1>Loan Details</h1>
+                        <ul>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan ID:</span>
+                                <span id="Loan-ID" style="float: right;">{{ user.loan_id }}</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Amount:</span>
+                                <span id="Loan-amount" style="float: right;">{{ user.amount }}</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Tenure:</span>
+                                <span id="Loan-tenure" style="float: right;">{{ user.duration }} years</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Interest:</span>
+                                <span id="Loan-interest" style="float: right;">{{ user.interest_rate }}%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cover1">
+                        <p>Loan ID: {{ user.loanID1 }}</p>
                     </div>
                 </div>
-                
-                <div class="col-md-6">
-                  <form>
-                <div class="form-group">
-                  <label for="list">Name</label>
-                  <input type="text" class="form-control" id="list" aria-describedby="emailHelp">
+                <div class="book" onclick="BookToggle2()">
+                    <div id="cover-inside">
+                        <h1>Loan Details</h1>
+                        <ul>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan ID:</span>
+                                <span id="Loan-ID" style="float: right;">{{ user.loan_id }}</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Type:</span>
+                                <span id="Loan-type" style="float: right;">Personal</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Amount:</span>
+                                <span id="Loan-amount" style="float: right;"> {{ user.amount }}</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Tenure:</span>
+                                <span id="Loan-tenure" style="float: right;">{{ user.duration }} years</span>
+                            </li>
+                            <li>
+                                <span id="Loan-h" style="font-size: 15px; font-weight: bold;">Loan Interest:</span>
+                                <span id="Loan-interest" style="float: right;">{{ user.interest_rate }}%</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="cover2">
+                        <p>Loan ID: {{ user.loanID2 }}</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <label for="tags">Subject</label>
-                  <input type="text" class="form-control" id="tags">
-                </div>
-                    
-                  <div class="form-group">
-                  <label for="describe">Please desribe the issue you are facing ?</label>
-                  <textarea type="text" class="form-control" id="describe" rows="5"></textarea>
-                </div>
-                    
-                    <div class="form-group">
-                  <label for="exampleFormControlSelect1">Select Category</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Account Related</option>
-                    <option>Report Fraud Transactions</option>
-                    <option>Loan</option>
-                    <option>Regarding Pro Account</option>
-                    <option>Unknown Charges Deduction</option>
-                    <option>Others</option>
-                  </select>
-                </div>
-                          
-              <button type="button" class="btn btn-primary"><span>Submit</span> <i id="arrow-sub"></i></button>
-                </div>
-                  
-                </div>
-              </div>
+            </div>
+             <div class="Noted">
+                <span id="Note">Note:</span>
+                <span>To apply for new loan, kindly visit to your nearest branch or</span>
+                <span id="Note-text" onclick="sendsupport('{{user.username}}')">contact support</span>
+                <span>.</span>
+            </div>
         </div>
-    </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js'></script>
-</body>
+        <!-- partial -->
 
-</html>
+        <script>
+            function BookToggle1() {
+                const toggleNMenu = document.querySelector(".cover1");
+                toggleNMenu.classList.toggle("active");
+            }
+        </script>
+        <script>
+            function BookToggle2() {
+                const toggleNMenu = document.querySelector(".cover2");
+                toggleNMenu.classList.toggle("active");
+            }
+        </script>
+        <script>
+            function sendsupport(username) {
+                 window.location.href = `/support?username=${username}`;
+            }
+        </script>

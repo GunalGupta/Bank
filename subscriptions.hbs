@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Account | Subscriptions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.10/tailwind.min.css'>
-    <link rel="stylesheet" href="css/subscriptions.css">
-</head>
-
-<body>
-    <div class="flex text-gray-800 min-h-screen overflow-x-hidden">
+  <div class="flex text-gray-800 min-h-screen overflow-x-hidden">
         <aside class="hidden asid">
             <a href="#" class="flex items-center mx-auto my-12">
                 <div id="rounded-full-logo">
@@ -19,14 +6,13 @@
                 </div>
                 <span id="top-head">Bank Hamara</span>
             </a>
-            <a href="#" id="logo-below"
-                class="block text-center text-white text-lg font-semibold bg-purple-600 hover:bg-purple-700 py-3 px-4 mx-8 rounded-lg">
+            <a href="#" id = "logo-below" class="block text-center text-white text-lg font-semibold bg-purple-600 hover:bg-purple-700 py-3 px-4 mx-8 rounded-lg">
                 Transfer money
             </a>
             <nav class="font-semibold text-gray-600 my-12">
                 <ul class="space-y-3">
                     <li>
-                        <a href="dashboard.html"
+                        <a href="dashboard?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -36,7 +22,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="cards.html"
+                        <a href="cards?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -56,7 +42,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="transaction.html"
+                        <a href="transaction?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -66,7 +52,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="loans.html"
+                        <a href="loans?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -76,7 +62,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="support.html"
+                        <a href="support?username={{user.username}}"
                             class="flex items-center px-8 py-3 bg-gradient-to-r hover:from-purple-200 hover:text-purple-600">
                             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 mr-5">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -181,7 +167,7 @@
                             </svg>
                         </button>
                         <button class="h-10 w-10 bg-gray-200 border shadow rounded-full overflow-hidden">
-                            <img style="background-color: #000;" src="img\user4.png"
+                            <img style="background-color: #000;" src="img\user-image.jpg"
                                 class="h-full w-full object-cover" />
                         </button>
                     </div>
@@ -407,7 +393,3 @@
             </main>
         </div>
     </div>
-
-</body>
-
-</html>

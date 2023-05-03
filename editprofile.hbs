@@ -1,0 +1,148 @@
+  <div class="navbar-top">
+        <div class="title">
+            <h1 style="text-align: center;">Profile</h1>
+        </div>
+
+        <!-- Navbar -->
+        <ul>
+            <li>
+                <a href="dashboard?username={{user.username}}">
+                    <i class="fa fa-sign-out-alt fa-2x"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- End -->
+    </div>
+    <!-- End -->
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="img/user-image.jpg" alt="" width="100" height="100">
+
+            <div class="name">
+                {{user.name}}
+            </div>
+            <div class="job">
+                @{{user.username}}
+            </div>
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url">
+    <a onclick = "sendprofile('{{user.username}}')" style="cursor: pointer;">Profile</a>
+</div>
+            <div class="url">
+                <a class="active">Settings</a>
+            </div>
+        </div>
+    </div>
+    <!-- End -->
+
+    <!-- Main -->
+    <div class="main">
+        <div class="card">
+           <div class="card-body">
+  <form action="/editprofile?username={{user.username}}" method="POST">
+    <table>
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>:</td>
+          <td><input type="text" id="floatingInput" name="name" value="{{user.name}}" /></td>
+        </tr>
+        <tr>
+          <td>Username</td>
+          <td>:</td>
+          <td><input type="text" id="floatingInput" name="username" value="{{user.username}}" readonly /></td>
+        </tr>
+        <tr>
+          <td>Contact No</td>
+          <td>:</td>
+          <td><input type="text" id="floatingInput" name="contact_no" value="{{user.contact_no}}" /></td>
+        </tr>
+        <tr>
+          <td>City</td>
+          <td>:</td>
+          <td><input type="text" id="floatingInput" name="city" value="{{user.city}}" /></td>
+        </tr>
+        <tr>
+          <td>State</td>
+          <td>:</td>
+          <td><input type="text" id="floatingInput" name="state" value="{{user.state}}" /></td>
+        </tr>
+        <tr>
+          <td>Pin Code</td>
+          <td>:</td>
+          <td><input type="text" name="pincode" value="{{user.pincode}}" /></td>
+        </tr>
+        <tr>
+  <td>Government ID</td>
+  <td>:</td>
+  <td><input type="text" name="GovernmentID" value="{{user.GovernmentID}}" /></td>
+</tr>
+
+      </tbody>
+    </table>
+    <div class="frame">
+      <button class="custom-btn btn-3" type="submit"><span>Submit</span></button>
+    </div>
+</form>
+
+</div>
+
+
+    {{#if alert}}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{alert}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{{/if}}
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function sendprofile(username){
+    window.location.href = `profile?username=${username}`;
+}
+
+function editemail() {
+    let email = prompt("Please enter your name");
+    document.getElementById("email").innerHTML = email;
+}
+
+function confirmemail() {
+    let confirmEdit = confirm("Are you sure you want to edit your email");
+    if (confirmEdit) {
+        editemail();
+    }
+}
+document.querySelector('#edit2').addEventListener('click', confirmemail);
+
+function editAddress() {
+    let address = prompt("Please enter your new address");
+    document.getElementById("address").innerHTML = address;
+}
+
+function confirmEditAddress() {
+    let confirmEdit = confirm("Are you sure you want to edit the address?");
+    if (confirmEdit) {
+        editAddress();
+    }
+}
+document.querySelector('#edit3').addEventListener('click', confirmEditAddress);
+
+function editjob() {
+    let job = prompt("Please enter your new designation");
+    document.getElementById("job").innerHTML = job;
+}
+
+function confirmjob() {
+    let confirmEdit = confirm("Are you sure you want to edit the your job details?");
+    if (confirmEdit) {
+        editjob();
+    }
+}
+document.querySelector('#edit4').addEventListener('click', confirmjob);
+    </script>
