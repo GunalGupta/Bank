@@ -71,8 +71,8 @@ Your `Bank` folder would be consiting the files :
 
 
 ## Contributors
-- *Ved Vekhande*
-- *Gunal Gupta*
-- *Anubhav Dubey*
-- *Navin Kumar*
+- *1. Ved Vekhande*
+- *2. Gunal Gupta*
+- *3. Anubhav Dubey*
+- *4. Navin Kumar*
 
